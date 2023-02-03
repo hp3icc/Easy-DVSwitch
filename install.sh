@@ -15,7 +15,16 @@ then
  #echo "found file"
 
 fi
-
+if [ -f "/bin/dvs" ]
+then
+   rm /bin/dvs
+      
+fi
+if [ -f "/bin/DVS" ]
+then
+   rm /bin/DVS
+      
+fi
 if [ -d "/opt/Analog_Bridge" ]
 then
    rm -r /opt/Analog_Bridge
